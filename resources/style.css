@@ -216,29 +216,62 @@ h3 .bottom-learning-card  {
 .thesis-exhibit {
   width: 100%;
   background-color: white;
+  padding: 2rem 1.5rem;
 }
 
 .thesis-exhibit h3 {
   text-align: center;
-  padding-top: 2rem;
+
   padding-bottom: 2rem;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.exhibits-row {
+.content-row {
   display: flex;
   width: 100%;
   flex-direction: row;
 }
 
-.video-column {
+.exhibit-column-1 {
   display: flex;
   max-width: 60%;
+  height: auto;
   flex-direction: column;
 }
 
-.video {
+.exhibit-column-1 video {
   width: 100%;
   height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.exhibit-column-2 {
+  display: flex;
+  justify-content: space-between;
+  max-width: 40%;
+
+  flex-direction: column;
+  margin-left: 1.5rem;
+}
+
+.exhibit-card {
+  width: 100%;
+padding: 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  background-color: lightgray;
+  margin-bottom: .5rem;
+}
+
+.exhibit-card img {
+  width: 35%;
+  height: auto;
+
+}
+
+.exhibit-card-text {
+  width: 65%;
+  align-items: center;
+  padding-left: 1rem;
 }
