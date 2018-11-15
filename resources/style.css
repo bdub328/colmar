@@ -6,6 +6,7 @@ html {
 body {
   color: gray;
   width: 100%;
+  height: auto;
 font-family: "Helvetica", sans-serif;
 margin: 0;
 padding: 0;
@@ -266,6 +267,7 @@ padding: 1rem 1rem;
 
 .exhibit-card img {
   width: 35%;
+  max-height: 35%;
   height: auto;
 
 }
@@ -274,4 +276,30 @@ padding: 1rem 1rem;
   width: 65%;
   align-items: center;
   padding-left: 1rem;
+}
+
+  /*Footer*/
+
+footer {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid lightgray;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.copyright {
+  align-items: center;
+  font-size: 12px;
+}
+
+.terms-privacy {
+  align-items: center;
+}
+
+.terms-privacy li {
+margin-left: 1rem;
+  display: inline;
 }
