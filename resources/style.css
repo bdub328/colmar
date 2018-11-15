@@ -1,10 +1,10 @@
 html {
-  margin: 0;
-  padding: 0;
+
 }
 
 body {
   color: gray;
+
   width: 100%;
   height: auto;
 font-family: "Helvetica", sans-serif;
@@ -50,57 +50,54 @@ p {
     top: 0;
     margin: 0;
     padding: 0;
+    justify-content: space-between;
   }
 
-  /*not sure I need this yet*/
-.container {
-  padding: 16px 24px;
-  width: 1232px;
-  margin: auto;
-}
 
 .logo-title {
   display: flex;
-  flex-grow: 1;
   align-items: center;
   height: 32px;
-  margin-left: 24px;
+  margin-left: 1.5rem;
 }
 
-
-nav {
-display: flex;
-align-items: flex-end;
-
-}
-
-nav span {
-  padding-right: 24px;
+header nav span {
+  padding-right: 1.5rem;
 }
 
 
 /* Banner Section */
 
 .banner {
-  background-color: #DCB947;
-  padding: 0;
-  margin: 0;
-  width: 100%;
   display: flex;
+  width: 100%;
+  flex-direction: row;
   align-items: center;
-  padding-top: 4rem;
+  background-color: #DCB947;
+  margin-top: 4rem;
+
+  padding: 2rem 1.5rem;
+
 }
 
 .banner img {
 width: 60%;
 height: auto;
-padding: 2rem 1.5rem;
+
 }
 
 .banner-text {
+  display: flex;
+  flex-direction: column;
   width: 40%;
   padding: 2rem 1rem;
+  align-items: center
 
+}
+
+.banner-text h2 {
+
+  align-items: center;
 }
 
 
@@ -121,19 +118,16 @@ padding: 2rem 1.5rem;
   .information-article {
     background-color: white;
     max-width: 100%;
-    display: flex
+    display: flex;
     flex-direction: row;
     padding: 2rem 1.5rem;
   }
 
-  .article {
+  .information-article .article {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-left: 1.5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    width: 60%;
+    max-width: 60%;
+
   }
 
   .article img {
@@ -149,19 +143,26 @@ padding: 2rem 1.5rem;
   .card-column {
     display: flex;
     flex-direction: column;
-  }
-
-  .card {
-    display: flex;
-    flex-direction: row;
     max-width: 40%;
     height: auto;
+    margin-left: 2rem;
+    justify-content: space-between;
   }
 
-.card-images {
+.card {
+  flex-direction: row;
+  background-color: lightgray;
+  padding: 0 1rem;
+}
+
+  .card img {
+    display: flex;
+    flex-direction: row;
     width: 35%;
     height: auto;
   }
+
+
 
   /*Start Learning Section*/
 
@@ -194,6 +195,7 @@ padding: 2rem 1.5rem;
 }
 
 .learning-card-image img {
+display: flex;
  width: 100%;
  height: auto;
 }
@@ -258,6 +260,7 @@ h3 .bottom-learning-card  {
 
 .exhibit-card {
   width: 100%;
+  
 padding: 1rem 1rem;
   display: flex;
   flex-direction: row;
@@ -267,7 +270,7 @@ padding: 1rem 1rem;
 
 .exhibit-card img {
   width: 35%;
-  max-height: 35%;
+
   height: auto;
 
 }
