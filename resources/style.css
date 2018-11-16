@@ -21,7 +21,7 @@ h2 {
   color: black;
   margin-bottom: 1.5rem;
   font-weight: bold;
-  text-transform: uppercase;
+
   padding-top: 2rem;
 }
 
@@ -90,14 +90,15 @@ height: auto;
   display: flex;
   flex-direction: column;
   width: 40%;
-  padding: 2rem 1rem;
-  align-items: center
+  padding: 2rem 2rem;
+  align-items: center;
+  text-align: center;
 
 }
 
 .banner-text h2 {
+text-transform: uppercase;
 
-  align-items: center;
 }
 
 
@@ -112,11 +113,17 @@ height: auto;
   width: 8rem;
 }
 
+.button:hover {
+  background-color: #030AFA;
+  transition-duration: 1s;
+
+}
+
 
   /*Article and Information Section*/
 
   .information-article {
-    background-color: white;
+    background-color: #EFEFEF;
     max-width: 100%;
     display: flex;
     flex-direction: row;
@@ -127,7 +134,7 @@ height: auto;
     display: flex;
     flex-direction: column;
     max-width: 60%;
-
+color: black;
   }
 
   .article img {
@@ -135,6 +142,8 @@ height: auto;
     height: auto;
 
   }
+
+
 
 .title {
    padding-top: 2rem;
@@ -152,11 +161,14 @@ height: auto;
 
 .card {
   display: flex;
-
   flex-direction: row;
-  background-color: lightgray;
+  background-color: #E0DEE1;
   padding: 1rem;
   align-items: center;
+}
+
+.card:hover {
+  background-color: white;
 }
 
   .card img {
@@ -165,25 +177,43 @@ height: auto;
     width: 35%;
     height: auto;
     align-items: center;
-
   }
+
+.event-text {
+    padding-left: 1rem;
+color: black;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .event-text a {
+    color: #4A90E2;
+    text-decoration: none;
+    font-size: .85rem;
+    padding-top: .5rem;
+  }
+
+  .event-text h3 {
+      padding-bottom: .5rem;
+    }
+
 
 
 
   /*Start Learning Section*/
 
-.start-learning-section h3 {
+.start-learning-section h2 {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-weight: bold;
-  text-transform: uppercase;
+
   }
 
 .start-learning-section {
   width: 100%;
   background-color: lightgray;
-  padding: 4.5rem 2rem;
+  padding: 2rem 2rem;
 }
 
 .learning-row {
@@ -216,8 +246,8 @@ display: flex;
   padding-bottom: .5rem;
 }
 
-h3 .bottom-learning-card  {
-  padding-bottom: 0;
+.bottom-learning-card h3 {
+  padding-bottom: 1rem;
 }
 
   /*Thesis Exhibit*/
@@ -228,11 +258,11 @@ h3 .bottom-learning-card  {
   padding: 2rem 1.5rem;
 }
 
-.thesis-exhibit h3 {
+.thesis-exhibit h2 {
   text-align: center;
 
   padding-bottom: 2rem;
-  text-transform: uppercase;
+
   font-weight: bold;
 }
 
@@ -257,22 +287,38 @@ h3 .bottom-learning-card  {
 
 .exhibit-column-2 {
   display: flex;
-  
   max-width: 40%;
-
   flex-direction: column;
   margin-left: 1.5rem;
 }
 
 .exhibit-card {
   width: 100%;
+  padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+    margin-bottom: .5rem;
+    align-items: center;
+}
 
-padding: 1rem 1rem;
-  display: flex;
-  flex-direction: row;
-  background-color: lightgray;
-  margin-bottom: .5rem;
-  align-items: center;
+.exhibit-card:hover {
+  background-color: white;
+}
+  .exhibit-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    align-items: flex-start;
+    margin-left: 1rem;
+    flex-wrap: wrap;
+
+  }
+
+.exhibit-card-text h3 {
+padding-bottom: .5rem;
+
 }
 
 .exhibit-card img {
@@ -280,17 +326,15 @@ padding: 1rem 1rem;
 align-items: center;
   height: auto;
 
+
 }
 
-.exhibit-card-text {
-  width: 65%;
-  align-items: center;
-  padding-left: 1rem;
-}
+
 
   /*Footer*/
 
 footer {
+  width: 100%;
   background-color: white;
   padding: 1rem 1.5rem;
   border-top: 1px solid lightgray;
