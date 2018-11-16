@@ -35,7 +35,12 @@ p {
   line-height: 1.4;
 }
 
-  /*Header*/
+  /*Header Desktop*/
+  @media only screen and (min-width: 630px) {
+      .nav-mobile {
+        display: none;
+      }
+
 
   header {
     display: flex;
@@ -61,12 +66,36 @@ p {
   margin-left: 1.5rem;
 }
 
+
+
 header nav span {
-  padding-right: 1.5rem;
+padding-right: 1.5rem;
+}
+}
+
+/*Header Mobile*/
+@media only screen and (max-width: 630px) {
+  .logo-title {
+display: none;
+  }
+
+  .nav-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  nav {
+    display: none;
+  }
 }
 
 
-/* Banner Section */
+
+
+/* Banner Section Computer*/
+@media only screen and (min-width: 630px) {
 
 .banner {
   display: flex;
@@ -75,15 +104,12 @@ header nav span {
   align-items: center;
   background-color: #DCB947;
   margin-top: 4rem;
-
   padding: 2rem 1.5rem;
-
 }
 
 .banner img {
 width: 60%;
 height: auto;
-
 }
 
 .banner-text {
@@ -101,8 +127,6 @@ text-transform: uppercase;
 
 }
 
-
-
 .button {
   margin: 2rem 0;
   text-align: center;
@@ -118,6 +142,45 @@ text-transform: uppercase;
   transition-duration: 1s;
 
 }
+
+}
+
+/* Banner Section Mobile  */
+@media only screen and (max-width: 630px) {
+  .banner {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    background-color: #DCB947;
+  }
+  .banner img {
+    width: 100%;
+  }
+
+  .banner-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 2rem;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .button {
+    margin: 2rem 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    width: 20rem;
+  }
+}
+
+
+
+
 
 
   /*Article and Information Section*/
@@ -181,7 +244,6 @@ color: black;
 
 .event-text {
     padding-left: 1rem;
-color: black;
     display: flex;
     flex-direction: column;
   }
@@ -254,7 +316,7 @@ display: flex;
 
 .thesis-exhibit {
   width: 100%;
-  background-color: white;
+  background-color: #EFEFEF;
   padding: 2rem 1.5rem;
 }
 
@@ -335,7 +397,7 @@ align-items: center;
 
 footer {
   width: 100%;
-  background-color: white;
+  background-color: #EFEFEF;
   padding: 1rem 1.5rem;
   border-top: 1px solid lightgray;
   font-size: 12px;
