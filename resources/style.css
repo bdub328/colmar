@@ -82,7 +82,7 @@ display: none;
   }
 
   .nav-mobile {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-around;
   }
@@ -99,7 +99,7 @@ display: none;
 
 .banner {
   display: flex;
-  width: 100%;
+  max-width: 100%;
   flex-direction: row;
   align-items: center;
   background-color: #DCB947;
@@ -150,17 +150,17 @@ text-transform: uppercase;
   .banner {
     flex-direction: column;
     padding: 0;
-    width: 100%;
+    max-width: 100%;
     background-color: #DCB947;
   }
   .banner img {
-    width: 100%;
+    max-width: 100%;
   }
 
   .banner-text {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
     padding: 2rem 2rem;
     align-items: center;
     text-align: center;
@@ -316,7 +316,7 @@ text-transform: uppercase;
   /*Start Learning Section-COMPUTER*/
 
 .start-learning-section {
-  width: 100%;
+  max-width: 100%;
   background-color: lightgray;
   padding: 2rem 2rem;
 }
@@ -404,10 +404,10 @@ display: flex;
 
   /*Thesis Exhibit-COMPUTER*/
   @media only screen and (min-width: 630px) {
-    }
+
 
 .thesis-exhibit {
-  width: 100%;
+  max-width: 100%;
   background-color: #EFEFEF;
   padding: 2rem 1.5rem;
 }
@@ -445,7 +445,7 @@ display: flex;
 }
 
 .exhibit-card {
-  width: 100%;
+  max-width: 100%;
   padding: 1rem 1rem;
     display: flex;
     flex-direction: row;
@@ -477,7 +477,7 @@ padding-bottom: .5rem;
   width: 35%;
 align-items: center;
   height: auto;
-
+}
 
 }
 
@@ -485,7 +485,7 @@ align-items: center;
   @media only screen and (max-width: 630px) {
 
     .thesis-exhibit {
-      width: 100%;
+      max-width: 100%;
       background-color: #EFEFEF;
       padding: 2rem 1.5rem;
     }
@@ -536,17 +536,14 @@ align-items: center;
 
       .exhibit-card-text {
         display: none;
-
       }
 
     .exhibit-card-text h3 {
     padding-bottom: .5rem;
-
     }
 
     .exhibit-card img {
       displayL none;
-
     }
 
 
@@ -556,7 +553,7 @@ align-items: center;
   /*Footer-COMPUTER*/
   @media only screen and (min-width: 630px) {
 footer {
-  width: 100%;
+  max-width: 100%;
   background-color: #EFEFEF;
   padding: 1rem 1.5rem;
   border-top: 1px solid lightgray;
@@ -583,7 +580,7 @@ margin-left: 1rem;
 /*Footer-MOBILE*/
 @media only screen and (max-width: 630px) {
   footer {
-    width: 100%;
+    max-width: 100%;
     background-color: #EFEFEF;
     padding: 1rem 1.5rem;
     border-top: 1px solid lightgray;
